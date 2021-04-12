@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Employee Task Managment</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <style>
+        .search_bar{
+            margin-left: 55%;
+        }
+        .empty_tb{
+            height: 300px;
+            width: 600px;
+            color: white;
+            font-weight: 900;
+            font-size: 40px;
+            background-color: #dc3545;
+            padding-top: 70px;
+            margin-top: 80px;
+            margin-left: 340px;
+        }
+           .siz{
+          font-weight: 900;
+          font-size: 17px;
+
+      }
+      .nav_hed{
+          font-weight: 900;
+          font-size: 35px;
+
+      }
+       .it{
+    padding-left: 80%;
+}
+
+    </style>
+</head>
+<body>
+{#<div class="container mt-4">#}
+{#<h4 class="alert alert-warning text-center">Employee Task Management</h4>#}
+{#</div>#}
+{% block content %}
+
+{% endblock content %}
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/popper.js' %}"></script>
+<script src="{% static 'js/jquery.js' %}"></script>
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>
