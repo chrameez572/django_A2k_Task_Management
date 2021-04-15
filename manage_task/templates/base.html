@@ -7,9 +7,198 @@
     <title>Employee Task Managment</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <style>
+        body {
+            color: #fff;
+            background: #fff;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .form-control {
+            min-height: 41px;
+            box-shadow: none;
+            border-color: #ddd;
+        }
+
+        .form-control, .btn {
+            border-radius: 3px;
+        }
+
+        .signup-form {
+        {#width: 425px;#} margin: 0 auto;
+            padding: 140px 0;
+        }
+
+        .signup-form form {
+            color: #999;
+
+            padding: 30px;
+        }
+
+        .signup-form h1 {
+            color: #333;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        .signup-form hr {
+            margin: 0 -30px 20px;
+        }
+
+        .signup-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .signup-form label {
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        .signup-form input[type="checkbox"] {
+            margin-top: 6px;
+        }
+
+        .signup-form .btn {
+            font-size: 16px;
+            font-weight: bold;
+        {#background: #3598dc;#} border: none;
+            min-width: 100px;
+        }
+
+        {#.signup-form .btn:hover, .signup-form .btn:active {#}
+        {#background: blue;#}
+        {#outline: none !important;#}
+        {##}
+
+        #}#}
+        .register {
+            color: blue;
+            text-decoration: underline;
+
+
+        }
+
+        .register:hover {
+            text-decoration: none;
+        }
+
+        .sw {
+            color: black;
+
+            padding-left: 30px;
+        }
+
+        .siz {
+            font-weight: 900;
+            font-size: 17px;
+
+        }
+
+        .nav_hed {
+            font-weight: 900;
+            font-size: 35px;
+
+        }
+
+        .it {
+            padding-left: 80%;
+        }
+        .nav_lo{
+            font-weight: 900;
+            font-size: 31px;
+        }
+
+    </style>
+    <style>
+        body {
+            color: #fff;
+        {#background: #3598dc;#} font-family: 'Roboto', sans-serif;
+        }
+
+        .form-control {
+            min-height: 41px;
+        {#box-shadow: none;#} {#border-color: #ddd;#}
+        }
+
+        .form-control, .btn {
+            border-radius: 3px;
+        }
+
+        .signup-form {
+        {#width: 425px;#} margin: 0 auto;
+            padding: 60px 0;
+        }
+
+        .signup-form form {
+            color: #999;
+
+            padding: 50px;
+        }
+
+        .signup-form h2 {
+            color: #333;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        .signup-form hr {
+            margin: 0 -30px 20px;
+        }
+
+        .signup-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .signup-form label {
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        .signup-form input[type="checkbox"] {
+            margin-top: 6px;
+        }
+
+        .signup-form .btn {
+            font-size: 16px;
+            font-weight: bold;
+        {#background: #3598dc;#} border: none;
+            min-width: 100px;
+        }
+
+        .login_b {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .signup-form form a:hover {
+            text-decoration: underline;
+        }
+
+        .login {
+            color: black;
+            padding-left: 5%;
+
+        }
+
+        .it {
+            padding-left: 80%;
+        }
+
+        .siz {
+            font-weight: 900;
+            font-size: 17px;
+
+        }
+
+        .nav_hed {
+            font-weight: 900;
+            font-size: 35px;
+
+        }
+    </style>
+    <style>
         section {
             width: 100%;
-            height: 92vh;
+            height: 91vh;
         }
 
         .swiper-container {
