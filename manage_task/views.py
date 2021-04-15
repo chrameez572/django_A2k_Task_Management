@@ -33,6 +33,9 @@ def register (request):
            return redirect('login')
 
     return render(request, 'register.html',{'form':form})
+def logout (request):
+    logout(request)
+    return redirect('login')
 
 def add_show(request):
     if request.method == 'POST':
