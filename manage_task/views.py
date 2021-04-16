@@ -3,6 +3,7 @@ from .forms import EmployeeRegister,CreationUserForm
 from .models import Employee
 from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
@@ -34,9 +35,10 @@ def register (request):
 
     return render(request, 'register.html',{'form':form})
 def logout (request):
-    logout(request)
+    # logout(request)
     return redirect('login')
 
+@login_required(login_url='login')
 def add_show(request):
     if request.method == 'POST':
         form = EmployeeRegister(request.POST)
