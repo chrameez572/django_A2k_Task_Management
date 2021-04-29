@@ -39,14 +39,15 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title text-center alert alert-danger col-lg-12" id="exampleModalLabel">Add Task</h5>
+      <div class="modal-header bg-info">
+        <h5 class="modal-title text-center alert alert-danger col-lg-12 " id="exampleModalLabel">Add Task</h5>
       </div>
-      <div class="modal-body">
+      <div class="modal-body bg-info">
 
           <div class="mt-4">
                 <form action="" method="POST">
                     {% csrf_token %}
+
                     {{ form.as_p }}
 {#                    <center>#}
                     <button type="button" class="btn btn-danger col-lg-4 mt-3 mx-3" data-bs-dismiss="modal">Close</button>

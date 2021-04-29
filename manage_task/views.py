@@ -38,7 +38,7 @@ def logout (request):
     # logout(request)
     return redirect('login')
 
-@login_required(login_url='login')
+# @login_required(login_url='login')
 def add_show(request):
     if request.method == 'POST':
         form = EmployeeRegister(request.POST)
